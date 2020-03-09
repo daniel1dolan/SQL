@@ -41,3 +41,28 @@
 
 -- 9.
 -- SELECT * FROM restaurant WHERE '2020-03-09' - last_meal_there <= 7 AND stars = 5;
+
+-- Aggregation 
+-- 1.
+-- SELECT * FROM restaurant ORDER BY distance_from_headquarters;
+
+-- 2.
+-- SELECT * FROM restaurant ORDER BY distance_from_headquarters LIMIT 2;
+
+-- 3.
+-- SELECT * FROM restaurant ORDER BY stars DESC LIMIT 2 ;
+
+-- 4.
+-- SELECT * FROM restaurant WHERE distance_from_headquarters < 2 ORDER BY stars DESC LIMIT 2;
+
+-- 5.
+-- SELECT COUNT(*) FROM restaurant;
+
+-- 6.
+-- SELECT category, COUNT(category) AS num_category FROM restaurant GROUP BY category;
+
+-- 7.
+-- SELECT category, AVG(stars) as ave_stars FROM restaurant GROUP BY category;
+
+-- 8.
+-- SELECT category, MAX(stars) AS max_stars FROM restaurant GROUP BY category
