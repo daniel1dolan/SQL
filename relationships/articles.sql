@@ -48,7 +48,22 @@
 -- INNER JOIN article ON author.id = article.author_id
 -- GROUP BY author.id; 
 
-SELECT author.id, name, title 
-FROM author 
-INNER JOIN article ON author.id = article.author_id
-WHERE author.id = 8;
+-- SELECT author.id, name, title 
+-- FROM author 
+-- INNER JOIN article ON author.id = article.author_id
+-- WHERE author.id = 8;
+
+-- Getting the count of each. with outer join. Should do next.
+-- SELECT author.id, name, title
+-- FROM author
+-- LEFT OUTER JOIN article ON author.id = article.author_id;
+
+-- INSERT INTO article VALUES
+-- (DEFAULT, 'Test Article', 88);
+
+-- SELECT author.id, author.name, COUNT(article.id)
+-- FROM author 
+-- INNER JOIN article ON author.id = article.author_id
+-- GROUP BY author.id;
+--Group by is the stable grouper. 
+
