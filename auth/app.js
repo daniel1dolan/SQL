@@ -35,6 +35,7 @@ let hashNewLog = keyNewLogin.toString("hex");
 
 if (hashNewLog == password_parts[3]) {
   console.log("welcome user");
+  console.log(hashNewLog);
 } else {
   console.log("password incorrect");
 }
